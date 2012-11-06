@@ -1,0 +1,14 @@
+# Makefile for building the C language shared library for the cufflinks c scripts
+C = gcc
+OPTS = -c -fPIC
+LOADER = gcc
+
+OBJECTS = cuffcompare.o,cufflinks.o,cuffmerge.o,gtfwrite.o
+
+ cufflinks.so: $(OBJECTS)
+	R CMD SHLIB -o cufflinks.so $(OBJECTS)
+
+.c.o: ; $(C) $(OPTS) -c $<
+
+clean:
+	-rm *.o *.so

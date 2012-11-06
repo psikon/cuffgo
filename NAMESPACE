@@ -1,0 +1,10 @@
+useDynLib(cuffGO,parseCufflinks,parseCuffcompare,parseCuffmerge,writeCufflinksGTF,writeCuffCompareGTF,writeCuffMergeGTF)
+export(readCufflinksFiles)
+export(saveToGTF)
+export(mapGOtoData)
+export(mapGOtoElement)
+export(mapAllGOtoData)
+export(readTracking)
+export(readRefmap)
+export(readTmap)
+

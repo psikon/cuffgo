@@ -1,0 +1,19 @@
+Package: cuffGO
+Type: Package
+Title: cufflinks and GO analysis
+Version: 0.99.1
+Date: 30.10.2012
+Author: Philipp Sehnert
+Maintainer: Philipp Sehnert <psikon86@gmail.com>
+Description: This package can parse, manipulate and write all output dataprovided by the cufflinks suite. It also have the function to map GO-Terms to the results and do an enrichment analysis with the topGO R-package.
+License: License: personal use
+LazyLoad: yes
+LazyData: yes
+Depends:
+    goseq, org.Hs.eg.db,R (>= 2.11.0)
+Collate:
+    'parse.R'
+    'save.R'
+    'analysis.R'
+    'helper.R'
+Packaged: 2012-05-06 22:05:50 UTC; psikon
